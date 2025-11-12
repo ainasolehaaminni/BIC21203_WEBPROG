@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeStory.html - Mozilla</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .window-frame {
+            border: 2px solid #005694;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 800px; /* Increased width for a landscape feel */
+            max-width: 90%;
+            overflow: hidden;
+        }
+
+        .window-header {
+            background: #005694;
+            color: white;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .window-controls span {
+            margin-left: 5px;
+            cursor: pointer;
+            border: 1px solid white;
+            padding: 0 5px;
+            line-height: 1.2;
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1em;
+            border-radius: 2px;
+        }
+
+        .form-content {
+            padding: 20px;
+        }
+
+        .form-content label,
+        .form-content p {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-content input,
+        .form-content textarea {
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+        
+        .form-content textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 5px;
+            width: 15px; 
+            height: 15px;
+        }
+
+        .checkbox-item label {
+            font-weight: normal;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+
+        .form-content button {
+            background-color: #e0e0e0;
+            color: #000;
+            padding: 10px 20px;
+            border: 1px solid #777;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+
+        .form-content button:hover {
+            background-color: #d0d0d0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="window-frame">
+        <div class="window-header">
+            <span>LifeStory.html - Mozilla</span>
+            <div class="window-controls">
+                <span>_</span>
+                <span>&#9633;</span>
+                <span>&#x2715;</span>
+            </div>
+        </div>
+        
+        <div class="form-content">
+            <form action="#" method="post">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="story">Give your life's story in 100 words or less:</label>
+                <textarea id="story" name="story" rows="8"></textarea>
+
+                <p>Check all that apply to you:</p>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="tall" name="attributes" value="tall">
+                        <label for="tall">tall</label>
+                    </div>
+                    
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="funny" name="attributes" value="funny">
+                        <label for="funny">funny</label>
+                    </div>
+                    
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="smart" name="attributes" value="smart">
+                        <label for="smart">smart</label>
+                    </div>
+                </div>
+                
+                <button type="submit">Publish My Life's Story</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

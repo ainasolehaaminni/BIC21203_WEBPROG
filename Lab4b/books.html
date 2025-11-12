@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books</title>
+</head>
+<body>
+  <script>
+    const stuBook = {
+      "books": [
+        {
+          "title": "The Great Gatsby",
+          "author": "F. Scott Fitzgerald",
+          "publicationYear": 1925,
+          "genres": ["Fiction", "Classics"]
+        },
+        {
+          "title": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "publicationYear": 1960,
+          "genres": ["Fiction", "Coming-of-Age"]
+        }
+      ]
+    };
+    console.log("Title of the first book:", stuBook.books[0].title);
+
+    console.log("Author of the second book:", stuBook.books[1].author);
+
+    console.log("Genres of all books:");
+    stuBook.books.forEach((book, index) => {
+      console.log(`Book ${index + 1}:`, book.genres.join(", "));
+    });
+  </script>
+</body>
+</html>
